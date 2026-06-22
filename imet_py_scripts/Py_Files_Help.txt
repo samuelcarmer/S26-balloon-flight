@@ -1,0 +1,9 @@
+Py scripts I have written to process iMet data are in this folder. I use them by keeping them all in the same folder and importing functions in between scripts. If all py scripts are not in the same folder, this could cause problems. 
+
+process_imet.py : This script defines the load_log function to load the .LOG file into a dataframe which can then be further processed. I import the load_log function into other files and initialize a dataframe.  " from process_imet import loadlog; df = loadlog" . This file also contains clean_df function which just cuts out unnecessary columns.
+
+df_to_csv: Self explanatory name. Exports data to a csv file. You will have to change the out file path to save to your computer.
+
+analyze_imet: Various functions are defined to calculate lapse rate, temp profile, difference in altitude measurement (gps vs barometric), and Brunt Vaisala parameters (atmospheric stability measure), and static energy. All functions take a dataframe as a input parameter. These functions are used in plot_imet.py 
+
+plot_imet.py: functions from analyze_imet and process_imet are imported. df (dataframe) is initialized with the loadlog and clean_df functions. Code for multiple plots is written. All plots are in an "if" statement, and will only run when the if statement is true. Toggling each plot on or off is done by changing the truth value of the associated variable. ( "PvG = T" or "PvG = F" etc.)
