@@ -7,8 +7,7 @@ import matplotlib.pyplot as plt
 
 from process_imet import load_log, clean_df
 
-in_file_path = "/Users/samuelcarmer/Documents/Balloon_SRS/Radiacode/"
-out_filepath = "/Users/samuelcarmer/Documents/Balloon_SRS/iMet/Plots/"
+
 
 df_imet, start_time = load_log()
 #df_imet = clean_df(df_imet)
@@ -336,7 +335,6 @@ ax2.set_xticklabels([f"{t * 3.28084:.0f}" for t in ticks])
 ax2.set_xlabel("Altitude above launch (kft)")
 
 plt.tight_layout()
-plt.savefig(out_filepath+"two_rad_prof.png", dpi=400,bbox_inches='tight',transparent=True)
 plt.show()
 
 
