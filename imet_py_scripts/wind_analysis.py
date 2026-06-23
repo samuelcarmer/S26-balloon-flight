@@ -81,7 +81,6 @@ disp_h = np.sqrt(dx**2 + dy**2)                       # horizontal distance from
 z_rel = z - z[0]
 
 # plots
-out_filepath = "/Users/samuelcarmer/Documents/Balloon_SRS/iMet/Plots/"
 
 plt.rcParams.update({
     "font.size": 14,
