@@ -435,7 +435,6 @@ at_avg = np.mean(amp_t)
 A = (ap_avg-at_avg)/2
 print(A)
 
-out_filepath = "/Users/samuelcarmer/Documents/Balloon_SRS/iMet/Plots/"
 
 
 
