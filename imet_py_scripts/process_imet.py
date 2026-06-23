@@ -3,7 +3,6 @@ import pandas as pd
 import os
 #print(os.getcwd())
 
-in_filepath = "/Users/samuelcarmer/Documents/Balloon_SRS/iMet/Data_files/"
 
 
 
