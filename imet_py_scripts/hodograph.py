@@ -21,7 +21,6 @@ u = u[:idx_max]
 v = v[:idx_max]
 z = z[:idx_max]
 
-out_filepath = "/Users/samuelcarmer/Documents/Balloon_SRS/iMet/Plots/"
 
 
 plt.rcParams.update({
